@@ -104,16 +104,45 @@ p {
 }
 
 .rounded-100 {
-    border-radius: 100px;
+  border-radius: 100px;
 }
 
-#menu-main-menu {
+#main-menu {
   display: flex !important;
   flex-basis: auto;
   flex-direction: row;
+  position: relative;
+  top: -5vh;
+  font-family: "Roboto", sans-serif !important;
 }
 
 li {
-    display: list-item;
-    text-align: -webkit-match-parent;
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
+a {
+  text-decoration: none !important;
+  color: #000 !important;
+  font-size: 16px;
+  margin-left: 20px;
+  padding-bottom: 10px;
+  transition: border-bottom 0s;
+  text-decoration: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+a:hover {
+  border-bottom: 2px solid #bb0e20;
 }
